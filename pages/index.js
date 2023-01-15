@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,12 +13,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Analytics />
       <main className="main">
 
           {/* Stand with Ukraine against genocide */}
           <div className="relative bg-black">
               <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
-                  <div className="pr-16 sm:px-16 sm:text-center">
+                  <div className="sm:px-16 text-center">
                       <p className="font-medium text-white">
                           <span className="md:inline"> 	🇺🇦 Stand with Ukraine against genocide</span>
                           <span className="block sm:ml-2 sm:inline-block">
